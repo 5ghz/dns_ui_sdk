@@ -7,7 +7,7 @@ import random
 class TestRequestsCall(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.c = dns_ui.DnsUiSdk(api_url='https://dnsui.xiven.com/', auth_name='testadmin', auth_pass='testadmin')
+        self.c = dns_ui_sdk.DnsUiSdk(api_url='https://dnsui.xiven.com/', auth_name='testadmin', auth_pass='testadmin')
 
     def test_0_list_zones(self):
         data = self.c.list_zones()
