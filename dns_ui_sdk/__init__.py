@@ -1,3 +1,3 @@
-from dns_ui__sdk import DnsUiSdk
+from dns_ui_sdk import DnsUiSdk
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
