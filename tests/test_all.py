@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import unittest
-import dns_ui
+import dns_ui_sdk
 import random
 
 
