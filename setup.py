@@ -32,6 +32,6 @@ setup(
     url="https://github.com/operasoftware/dns-ui/",
     packages = ["dns_ui_sdk"],
     install_requires=["requests >=2.2.1"],
-    tests_require=['pytest>=2.6.4', 'pytest-cov>=2.1.0', 'pytest-pep8>=1.0.6'],
+    tests_require=['pytest>=2.6.4', 'pytest-cov>=2.1.0', 'pytest-pep8>=1.0.6']
     license="BSD License"
 )
