@@ -9,6 +9,7 @@ version = re.findall(r'=.*?$', init_file)[0].split("\"")[1]
 
 
 class PyTest(TestCommand):
+    '''
     def initialize_options(self):
         TestCommand.initialize_options(self)
         self.pytest_args = ['--pep8', '--cov']
@@ -17,11 +18,12 @@ class PyTest(TestCommand):
         TestCommand.finalize_options(self)
         self.test_args = []
         self.test_suite = True
+    '''
 
     def run_tests(self):
         # import here, cause outside the eggs aren't loaded
         import pytest
-        errno = pytest.main(self.pytest_args)
+        errno = pytest.main(['--pep8', '--cov'])
         sys.exit(errno)
 
 setup(
