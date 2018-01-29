@@ -5,7 +5,6 @@ import json
 import requests
 
 
-
 def handle_exceptions(func):
     # pylint: disable=W0703
     """This module illustrates how to write your docstring in OpenAlea
