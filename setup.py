@@ -8,24 +8,6 @@ init_file = open(path.join(path.dirname(__file__), "dns_ui_sdk", "__init__.py"))
 version = re.findall(r'=.*?$', init_file)[0].split("\"")[1]
 
 
-class PyTest(TestCommand):
-    '''
-    def initialize_options(self):
-        TestCommand.initialize_options(self)
-        self.pytest_args = ['--pep8', '--cov']
-
-    def finalize_options(self):
-        TestCommand.finalize_options(self)
-        self.test_args = []
-        self.test_suite = True
-    '''
-
-    def run_tests(self):
-        # import here, cause outside the eggs aren't loaded
-        import pytest
-        errno = pytest.main(['--pep8', '--cov'])
-        sys.exit(errno)
-
 setup(
     name="dns-ui-sdk",
     version=version,

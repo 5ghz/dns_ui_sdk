@@ -6,9 +6,10 @@ python:
 install:
   - pip install coveralls
 
-#script: python setup.py test --pep8 coveralls -v --cov coveralls --cov-report term-missing
-script: coverage run --source dns_ui_sdk setup.py test
-
+script:
+  - pylint --max-line-length=240 dns_ui_sdk
+  - pep8 --max-line-length=120 dns_ui_sdk
+  - coverage run --source dns_ui_sdk setup.py test
 
 after_success:
   - coveralls

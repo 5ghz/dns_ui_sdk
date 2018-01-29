@@ -1,3 +1,6 @@
-from dns_ui_sdk import DnsUiSdk
+"""
+Module Docs
+"""
+from .dns_ui_sdk import DnsUiSdk
 
 VERSION = "0.0.2"
