@@ -5,6 +5,8 @@ python:
 
 install:
   - pip install coveralls
+  - pip install pylint
+  - pip install pep8
 
 script:
   - pylint --max-line-length=240 dns_ui_sdk
