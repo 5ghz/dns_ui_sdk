@@ -6,7 +6,9 @@ python:
 install:
   - pip install coveralls
 
-script: python setup.py test --pep8 coveralls -v --cov coveralls --cov-report term-missing
+#script: python setup.py test --pep8 coveralls -v --cov coveralls --cov-report term-missing
+script: coverage run --source cookiecutter setup.py test
+
 
 after_success:
   - coveralls
