@@ -7,7 +7,7 @@ install:
   - pip install coveralls
 
 #script: python setup.py test --pep8 coveralls -v --cov coveralls --cov-report term-missing
-script: coverage run --source cookiecutter setup.py test
+script: coverage run --source dns_ui_sdk setup.py test
 
 
 after_success:
