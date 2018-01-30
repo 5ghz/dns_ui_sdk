@@ -10,21 +10,8 @@ Welcome to dns_ui_sdk's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-Class reference
-===============
-
-Waiting for https://github.com/sphinx-doc/sphinx/issues/3494 to be resolved...
-
 DNSUISDK
 -------
 .. autoclass:: dns_ui_sdk.DnsUiSdk
    :members:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
